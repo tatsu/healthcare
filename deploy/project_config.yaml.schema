@@ -434,6 +434,19 @@ definitions:
                   type: object
                   description: |
                     Wraps the CFT template pubsub.py.
+          routes:
+            type: array
+            description: Provides support for routes.
+            additionalProperties: false
+            items:
+              type: object
+              required:
+              - properties
+              properties:
+                properties:
+                  type: object
+                  description: |
+                    Wraps the CFT template single_route.py.
           service_accounts:
             type: array
             description: Provides support for service accounts.
@@ -469,6 +482,19 @@ definitions:
                   type: object
                   description: |
                     Wraps the CFT template network.py.
+          vpns:
+            type: array
+            description: Provides support for VPNs.
+            additionalProperties: false
+            items:
+              type: object
+              required:
+              - properties
+              properties:
+                properties:
+                  type: object
+                  description: |
+                    Wraps the CFT template vpn.py.
 
 required:
 - overall
