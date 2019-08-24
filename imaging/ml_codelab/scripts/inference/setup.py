@@ -18,9 +18,7 @@ REQUIRED_PACKAGES = [
     'requests-toolbelt',
     'google-api-python-client',
     'google-api-core',
-    # Pin googleapis-common-proto until issue is resolved.
-    # https://github.com/GoogleCloudPlatform/google-cloud-python/issues/5703
-    'googleapis-common-protos==1.5.3',
+    'googleapis-common-protos',
     'google-cloud-pubsub',
     'httplib2',
     'oauth2client',
